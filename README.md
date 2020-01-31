@@ -1,24 +1,5 @@
 # convert-color-web
 
-## Project setup
-```
-yarn install
-```
+Coming soon...
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Same principle as my color converter CLI tool, but on a webpage.
