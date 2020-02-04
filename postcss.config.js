@@ -4,8 +4,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     './src/**/*.html',
     './src/**/*.vue'
   ],
-  whitelistPatterns: [/^\.el-/],
-  whitelistPatternsChildren: [/^\.el-/],
+  whitelistPatterns: [/^\.el-\S+/],
+  whitelistPatternsChildren: [/^\.el-\S+/],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 })
 
