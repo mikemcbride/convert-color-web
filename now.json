@@ -2,7 +2,7 @@
   "version": 2,
   "name": "convert-color-web",
   "builds": [
-    { "src": "www/package.json", "use": "@now/static-build" }
+    { "src": "package.json", "use": "@now/static-build" }
   ],
   "routes": [
     { "src": "^/js/(.*)", "headers": { "cache-control": "max-age=31536000,immutable" }, "dest": "/www/js/$1" },
