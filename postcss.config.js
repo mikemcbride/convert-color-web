@@ -1,6 +1,7 @@
 // postcss.config.js
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: [
+    './public/index.html',
     './src/**/*.html',
     './src/**/*.vue'
   ],

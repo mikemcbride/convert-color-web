@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-100 min-h-screen p-4 font-sans">
+  <div class="p-4">
     <h1 class="pt-4 mb-8 text-3xl font-semibold text-gray-900">Color Converter</h1>
     <div class="max-w-xs">
       <div class="flex items-center mb-4">
