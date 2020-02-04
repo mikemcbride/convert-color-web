@@ -16,6 +16,7 @@ const rgbHsl = function(color) {
 
 const rgbaHsla = function(color) {
   // alpha stuff gets kinda tricky here. extracting the logic.
+  // eslint-disable-next-line
   let [_, red, green, blue, alpha] = rgbaRegex({ exact: true }).exec(color)
   let [h, s, l] = rgbHsl(`rgb(${red}, ${green}, ${blue})`)
   return `hsla(${h}, ${s}%, ${l}%, ${alpha})`
@@ -70,11 +71,13 @@ function isValidColor(str) {
 }
 
 function parseHsl(hslString) {
+  // eslint-disable-next-line
   const [_, hue, saturation, lightness] = hslRegex({ exact: true }).exec(hslString)
   return { hue, saturation, lightness }
 }
 
 function parseHsla(hslaString) {
+  // eslint-disable-next-line
   const [_, hue, saturation, lightness, alpha] = hslaRegex({ exact: true }).exec(hslaString)
   return { hue, saturation, lightness, alpha }
 }
